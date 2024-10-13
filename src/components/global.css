@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
     --yellow: #EBD247;
     --gray: #8B8B8B;
+    --main-font: "Press Start 2P", system-ui;
 }

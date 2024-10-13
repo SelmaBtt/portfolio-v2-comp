@@ -1,0 +1,15 @@
+.wrapper{
+    background-color: var(--yellow);
+    box-shadow: -2px -2px 0px 0px rgba(49, 35, 35, 0.50) inset, 2px 2px 0px 0px #FFF inset;
+    border: none;
+    font-family: var(--main-font);
+    padding: 4px;
+}
+
+.wrapper:hover{
+    cursor: pointer;
+}
+
+.wrapper:active{
+    box-shadow: -2px -2px 0px 0px #FFF inset, 2px 2px 0px 0px rgba(49, 35, 35, 0.50) inset;
+}

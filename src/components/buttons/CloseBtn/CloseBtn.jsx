@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './CloseBtn.module.css'
 import '../../global.css'
 
