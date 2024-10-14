@@ -1,0 +1,16 @@
+.wrapper {
+    background-color: transparent;
+    border: none;
+    font-family: var(--main-font);
+    padding: 4px;
+}
+
+.wrapper:hover {
+    background-color: var(--beige);
+    box-shadow: -2px -2px 0px 0px rgba(49, 35, 35, 0.50) inset, 2px 2px 0px 0px #FFF inset;
+    cursor: pointer;
+}
+
+.wrapper:active {
+    box-shadow: -2px -2px 0px 0px #FFF inset, 2px 2px 0px 0px rgba(49, 35, 35, 0.50) inset;
+}

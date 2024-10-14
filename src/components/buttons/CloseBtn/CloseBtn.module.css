@@ -8,7 +8,7 @@
 }
 
 .btnWrapper:hover{
-    outline: var(--gray) dotted 1px;
+    outline: var(--outline);
     cursor: pointer;
 }
 
