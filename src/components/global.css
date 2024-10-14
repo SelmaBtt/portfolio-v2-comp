@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
+    --light-purple: #453452;
     --beige: #DCCABA;
     --yellow: #EBD247;
     --gray: #8B8B8B;
     --main-font: "Press Start 2P", system-ui;
     --outline: var(--gray) dotted 1px;
+}
+
+h2{
+    font-size: 16px;
+    font-family: var(--main-font);
+    margin: 0;
 }
