@@ -1,10 +1,10 @@
 import React from "react";
 import styles from './ExtraBtn.module.css';
 
-const ExtraBtn = ({ label, ...props }) => {
+const ExtraBtn = ({ label, className, ...props }) => {
     return(
         <button
-            className={styles.wrapper}
+            className={`${styles.wrapper} ${className || ''}`}
             {...props}
         >
             {label}
