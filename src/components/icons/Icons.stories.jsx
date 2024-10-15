@@ -1,4 +1,4 @@
-import CustomIcon from "./customIcon/CustomIcon";
+import CustomDesktopIcon from "./customDesktopIcon/CustomDesktopIcon";
 
 export default {
     title: 'RPCCL/icons'
@@ -19,5 +19,5 @@ export const Custom = {
         ),
         label: "About me",
     },
-    render: (args) => <CustomIcon {...args} />
+    render: (args) => <CustomDesktopIcon {...args} />
 }
