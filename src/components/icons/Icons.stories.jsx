@@ -6,11 +6,11 @@ import ClockIcon from './icons/ClockIcon';
 import HomeIcon from './icons/HomeIcon';
 import InfoIcon from './icons/InfoIcon';
 import LeftArrowIcon from './icons/LeftArrowIcon';
-import MailIcon from './icons/RightArrowIcon';
+import MailIcon from './icons/MailIcon';
 import RightArrowIcon from "./icons/RightArrowIcon";
 
 export default {
-    title: 'RPCCL/icons'
+    title: 'RPCCL/icons',
 }
 
 export const Desktop = {

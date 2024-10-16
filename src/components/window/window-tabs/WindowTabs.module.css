@@ -1,0 +1,22 @@
+.wrapper{
+    height: 20px;
+    background-color: var(--light-purple);
+    color: #FFF;
+    font-family: var(--main-font);
+    font-size: 12px;
+    box-shadow: -3px -3px 0px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+}
+
+.itemWrapper{
+    padding: 0 15px;
+}
+
+.itemWrapper:hover{
+    background-color: rgb(255,255,255, 0.25);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
