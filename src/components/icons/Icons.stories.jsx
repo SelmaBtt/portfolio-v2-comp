@@ -8,6 +8,8 @@ import InfoIcon from './icons/InfoIcon';
 import LeftArrowIcon from './icons/LeftArrowIcon';
 import MailIcon from './icons/MailIcon';
 import RightArrowIcon from "./icons/RightArrowIcon";
+import AnimatedDots from "./icons/AnimatedDots";
+import YellowSquare from "./icons/YellowSquare";
 
 export default {
     title: 'RPCCL/icons',
@@ -33,6 +35,8 @@ export const Icons = {
             <LeftArrowIcon />
             <RightArrowIcon />
             <MailIcon />
+            <YellowSquare />
+            <AnimatedDots />
         </div>
     )
 }

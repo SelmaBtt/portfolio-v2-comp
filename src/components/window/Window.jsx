@@ -8,7 +8,7 @@ const Window = ({ tabs, title, onTabClick, onCloseClick, className, children }) 
     return (
         <div className={`${styles.wrapper} ${className}`}>
             <WindowHeader title={title} onCloseClick={onCloseClick} />
-            {tabs.length > 0 && <WindowTabs labels={tabs} onTabClick={onTabClick} />}
+            {tabs.length > 0 && <WindowTabs className={styles.tabs} labels={tabs} onTabClick={onTabClick} />}
             <div className={styles.contentWrapper}>
                 {children || null}
             </div>

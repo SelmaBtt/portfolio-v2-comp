@@ -4,8 +4,12 @@
     font-family: var(--main-font);
 }
 
+.tabs{
+    margin-top: 3px;
+}
+
 .contentWrapper{
-    margin: 39px 20px;
+    margin: 20px 3% 39px 3%;
     background-color: var(--beige);
     box-shadow: -4px -4px 0px 0px rgba(255, 255, 255, 0.30) inset, 4px 4px 0px 0px rgba(0, 0, 0, 0.30) inset;
     padding: 4px;
