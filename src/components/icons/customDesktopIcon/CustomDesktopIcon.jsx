@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './CustomDesktopIcon.module.css';
+import PropTypes from "prop-types";
 
 const CustomDesktopIcon = ({ icon, label, className, ...props}) => {
     
@@ -18,6 +19,21 @@ const CustomDesktopIcon = ({ icon, label, className, ...props}) => {
             {label && <div>{label}</div>}
         </div>
     )
+}
+
+CustomDesktopIcon.protoTypes = {
+    icon: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.element,
+    ]),
+    label: PropTypes.string,
+    className: PropTypes.string,    
+}
+
+CustomDesktopIcon.defaultProps = {
+    icon: '',
+    label: '',
+    className: '',
 }
 
 export default CustomDesktopIcon;

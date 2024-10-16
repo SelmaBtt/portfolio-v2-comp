@@ -1,6 +1,4 @@
 .wrapper{
-    background-color: var(--yellow);
-    box-shadow: -2px -2px 0px 0px rgba(49, 35, 35, 0.50) inset, 2px 2px 0px 0px #FFF inset;
     border: none;
     font-family: var(--main-font);
     padding: 4px;
@@ -11,5 +9,23 @@
 }
 
 .wrapper:active{
+    box-shadow: -2px -2px 0px 0px #FFF inset, 2px 2px 0px 0px rgba(49, 35, 35, 0.50) inset;
+}
+
+.buttonPrimary{
+    box-shadow: -2px -2px 0px 0px rgba(49, 35, 35, 0.50) inset, 2px 2px 0px 0px #FFF inset;
+    background-color: var(--yellow);
+}
+
+.buttonExtra{
+    background-color: transparent;
+}
+
+.buttonExtra:hover{
+    box-shadow: -2px -2px 0px 0px rgba(49, 35, 35, 0.50) inset, 2px 2px 0px 0px #FFF inset;
+    background-color: var(--beige);
+}
+
+.buttonExtra:active{
     box-shadow: -2px -2px 0px 0px #FFF inset, 2px 2px 0px 0px rgba(49, 35, 35, 0.50) inset;
 }

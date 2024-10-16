@@ -1,15 +1,15 @@
 import CloseBtn from "./CloseBtn/CloseBtn";
 import Button from "./Button/Button";
-import ExtraBtn from "./ExtraBtn/ExtraBtn";
 
 export default {
-    title: 'RPCCL/buttons'
+    title: 'RPCCL/buttons',
 }
 
 export const Close = () => <CloseBtn />
 
 export const Custom = {
     args: {
+        primary: true,
         label: "example",
     },
     render: (args) => <Button {...args} />,
@@ -17,7 +17,8 @@ export const Custom = {
 
 export const Extra = {
     args: {
+        primary: false,
         label: "example",
     },
-    render: (args) => <ExtraBtn {...args} />,
+    render: (args) => <Button {...args} />,
 }
