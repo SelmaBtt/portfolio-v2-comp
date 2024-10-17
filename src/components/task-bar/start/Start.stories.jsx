@@ -1,3 +1,4 @@
+import Start from "./start";
 import StartMenu from "./StartMenu"
 
 export default{
@@ -7,7 +8,7 @@ export default{
 const arr = ['placeholder 1', 'placeholder 2', 'placeholder', 'placeholder', 'placeholder', 'placeholder', 'placeholder', 'placeholder', 'placeholder', 'placeholder', 'placeholder']
 const arr2 = ['placeholder 1', 'placeholder 2']
 
-export const Default = () => <StartMenu items={arr2} />;
+export const Default = () => <Start />;
 
 export const Menu = {
     args: {

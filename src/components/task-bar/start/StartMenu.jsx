@@ -3,9 +3,9 @@ import styles from './StartMenu.module.css';
 import PropTypes from "prop-types";
 import RightArrowIcon from "../../icons/icons/RightArrowIcon";
 
-const StartMenu = ({ items }) => {
+const StartMenu = ({ items, className }) => {
     return(
-        <div className={styles.wrapper}>
+        <div className={`${styles.wrapper} ${className}`}>
             {items && items.length > 0 && items.map((item, idx) => (
                 <div key={idx}>
                     {typeof item === 'string' ? (
@@ -38,10 +38,12 @@ StartMenu.propTypes = {
             })
         ])
     ),
+    className: PropTypes.string,
 }
 
 StartMenu.defaultProps = {
     items: [],
+    className: '',
 }
 
 export default StartMenu;
