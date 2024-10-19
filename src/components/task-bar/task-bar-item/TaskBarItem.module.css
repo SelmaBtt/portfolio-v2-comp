@@ -1,0 +1,26 @@
+.wrapper{
+    background-color: var(--light-purple);
+    font-family: var(--main-font);
+    color: #FFF;
+    width: fit-content;
+    height: calc(100% -3px);
+    padding: 19px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 0.25) inset, -3px -3px 0px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.wrapper:hover{
+    cursor: pointer;
+}
+
+.wrapper:active{
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25) inset, -3px -3px 0px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.icon {
+    max-height: 23px;
+    max-width: 23px;
+    margin-right: 20px;
+}
