@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './TaskBarItem.module.css';
+import PropTypes from "prop-types";
 
 const TaskBarItem = ({ 
     label = '',
@@ -22,6 +23,13 @@ const TaskBarItem = ({
             <span>{label}</span>
         </div>
     )
+}
+
+TaskBarItem.propTypes = {
+    label:  PropTypes.string,
+    icon: PropTypes.element,
+    className: PropTypes.string,
+    onClick: PropTypes.func,
 }
 
 export default TaskBarItem;
