@@ -1,0 +1,38 @@
+.wrapper{
+    background-color: var(--dark-purple);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 3px 0px 0px rgba(255, 255, 255, 0.50) inset;
+    padding-top: 3px;
+}
+
+.wrapper > *:first-of-type{z-index: 2;}
+
+.rightWrapper{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.modalBackground{
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+}
+
+.startMenu{
+    position: absolute;
+    z-index: 1;
+}
+
+.openStartMenu{
+    display: block;
+}
+
+.closedStartMenu{
+    display: none;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Battery = () => {
+const BatteryIcon = () => {
     return(
         <svg xmlns="http://www.w3.org/2000/svg" width="39" height="22" viewBox="0 0 39 22" fill="none">
             <path d="M32 5V1H1V21H32V5ZM32 5H37M38 6V16M33 17H37M34 6V16M36 6V16" stroke="white" stroke-width="2"/>
@@ -44,4 +44,4 @@ const Battery = () => {
     )
 }
 
-export default Battery;
+export default BatteryIcon;

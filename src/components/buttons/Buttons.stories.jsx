@@ -3,6 +3,7 @@ import Button from "./Button/Button";
 
 export default {
     title: 'RPCCL/buttons',
+    tags: ['autodocs'],
 }
 
 export const Close = () => <CloseBtn />

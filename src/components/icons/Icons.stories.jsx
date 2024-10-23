@@ -10,7 +10,7 @@ import MailIcon from './icons/MailIcon';
 import RightArrowIcon from "./icons/RightArrowIcon";
 import AnimatedDots from "./icons/AnimatedDots";
 import YellowSquare from "./icons/YellowSquare";
-import Battery from "./icons/Battery";
+import BatteryIcon from "./icons/BatteryIcon";
 
 export default {
     title: 'RPCCL/icons',
@@ -37,7 +37,7 @@ export const Icons = {
             <RightArrowIcon />
             <MailIcon />
             <YellowSquare />
-            <Battery />
+            <BatteryIcon />
             <AnimatedDots />
         </div>
     )
