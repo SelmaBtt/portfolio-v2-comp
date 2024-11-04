@@ -6,8 +6,6 @@ export default {
     tags: ['autodocs'],
 }
 
-export const Close = () => <CloseBtn />
-
 export const Custom = {
     args: {
         primary: true,
@@ -23,3 +21,5 @@ export const Extra = {
     },
     render: (args) => <Button {...args} />,
 }
+
+export const Close = () => <CloseBtn />

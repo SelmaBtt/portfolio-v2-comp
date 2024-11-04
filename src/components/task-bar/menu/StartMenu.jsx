@@ -1,4 +1,5 @@
 import React from "react";
+import '../../global.css';
 import styles from './StartMenu.module.css';
 import PropTypes from "prop-types";
 import RightArrowIcon from "../../icons/icons/RightArrowIcon";

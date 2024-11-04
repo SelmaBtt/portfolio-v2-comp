@@ -6,27 +6,19 @@ import TaskBarItem from "./task-bar-item/TaskBarItem";
 import HomeIcon from "../icons/icons/HomeIcon";
 import ClockIcon from "../icons/icons/ClockIcon";
 import BatteryIcon from "../icons/icons/BatteryIcon";
-import StartMenu from "./start/StartMenu"
+import StartMenu from "./menu/StartMenu"
 import MailIcon from "../icons/icons/MailIcon";
+import PropTypes from "prop-types";
 
-const Taskbar = () => {
+const Taskbar = ({ children }) => {
     let now = new Date().toLocaleTimeString();
     const [currentTime, setCurrentTime] = useState(now);
-    const [isStartMenuTrue, setIsStartMenuTrue] = useState(false);
-    // console.log(`Boolean: ${isStartMenuTrue}, Current Time: ${currentTime}`)
-    const StartMenuItemArr = [
-        {label: 'Mail', icon: <MailIcon />},
-        {label: 'GitHub' },
-        {label: 'LinkedIn' }
-    ]
 
     const UpdateTime=()=>{
         now =  new Date().toLocaleTimeString()
         setCurrentTime(now)
     }
     setInterval(UpdateTime)
-
-    const clickStartHandler = () => setIsStartMenuTrue(!isStartMenuTrue);
 
     const clickTimeHandler = () => {
         alert('Clicked time')
@@ -35,11 +27,9 @@ const Taskbar = () => {
     return(
         <>
             <div className={styles.wrapper}>
-                <TaskBarItem
-                    label="Start"
-                    icon={<HomeIcon />}
-                    onClick={clickStartHandler}
-                />
+                <div>
+                    {children || null}
+                </div>
                 <div className={styles.rightWrapper}>
                     <TaskBarItem 
                         label={currentTime}
@@ -50,18 +40,12 @@ const Taskbar = () => {
                 </div>
 
             </div>
-            {/* Modal window */}
-            <div 
-                onClick={clickStartHandler}
-                className={isStartMenuTrue && styles.modalBackground}
-            ></div>
-            <div className={isStartMenuTrue ? `${styles.startMenu} ${styles.openStartMenu}` : `${styles.startMenu} ${styles.closedStartMenu}`}>
-                <StartMenu 
-                    items={StartMenuItemArr}
-                />
-            </div>
         </>
     )
+}
+
+Taskbar.Proptypes = {
+    children: PropTypes.node,
 }
 
 export default Taskbar;

@@ -18,6 +18,7 @@
     justify-content: space-between;
     padding: 4px 18px;
     gap: 20px;
+    align-items: center;
 }
 
 .itemWrapper:hover{
@@ -26,7 +27,14 @@
     box-shadow: -3px -3px 0px 0px rgba(0, 0, 0, 0.70) inset, 3px 3px 0px 0px rgba(255, 255, 255, 0.50) inset;
 }
 
+.itemWrapper:active{
+    box-shadow: none;
+}
+
 .leftSide{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     max-width: 208px;
     overflow: hidden;
     white-space: nowrap;
@@ -35,7 +43,6 @@
 
 .icon{
     max-width: 28px;
-    max-height: 28px;
 }
 
 /* Scrollbar */
