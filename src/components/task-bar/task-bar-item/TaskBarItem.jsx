@@ -1,26 +1,30 @@
 import React from "react";
 import styles from './TaskBarItem.module.css';
 import PropTypes from "prop-types";
+import '../../global.css';
 
 const TaskBarItem = ({ 
     label = '',
     icon =  null,
+    pinned = false,
     className = '', 
     onClick = () => {}, 
     ...props 
 }) => {
+    const mode = pinned ? styles.pinnedWrapper : styles.defaultWrapper;
+
     return(
         <div 
-            className={`${styles.wrapper} ${className}`}
+            className={`${styles.wrapper} ${className} ${mode}`}
             onClick={onClick}
             {...props}
         >
             {icon && (
-                <div className={styles.icon}>
+                <div className={`${styles.icon} ${label ? styles.iconWithLabel : ''}`}>
                     {icon}
                 </div>
             )}
-            <span>{label}</span>
+            {label && <span>{label}</span>}
         </div>
     )
 }

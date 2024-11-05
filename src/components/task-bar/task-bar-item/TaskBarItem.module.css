@@ -1,9 +1,7 @@
 .wrapper{
-    background-color: var(--light-purple);
     font-family: var(--main-font);
     color: #FFF;
     width: fit-content;
-    height: calc(100% -3px);
     padding: 19px;
     display: flex;
     justify-content: space-evenly;
@@ -11,16 +9,32 @@
     box-shadow: 3px 3px 0px 0px rgba(255, 255, 255, 0.25) inset, -3px -3px 0px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
-.wrapper:hover{
+.defaultWrapper{
+    background-color: var(--light-purple);
+}
+
+.defaultWrapper:hover, .pinnedWrapper:hover{
     cursor: pointer;
 }
 
-.wrapper:active{
+.defaultWrapper:active{
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25) inset, -3px -3px 0px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.pinnedWrapper {
+    background-color: var(--dark-purple);
+    box-shadow: -3px -3px 0px 0px rgba(195, 195, 195, 0.25) inset, 3px 3px 0px 0px rgba(0, 0, 0, 0.80) inset;
+}
+
+.pinnedWrapper:active{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%), var(--dark-purple);
 }
 
 .icon {
     max-height: 23px;
     max-width: 23px;
+}
+
+.iconWithLabel{
     margin-right: 20px;
 }
