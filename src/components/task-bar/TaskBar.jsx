@@ -10,7 +10,7 @@ import StartMenu from "./menu/StartMenu"
 import MailIcon from "../icons/icons/MailIcon";
 import PropTypes from "prop-types";
 
-const Taskbar = ({ children }) => {
+const Taskbar = ({ children, className='' }) => {
     let now = new Date().toLocaleTimeString();
     const [currentTime, setCurrentTime] = useState(now);
 
@@ -25,22 +25,20 @@ const Taskbar = ({ children }) => {
     }
 
     return(
-        <>
-            <div className={styles.wrapper}>
-                <div>
-                    {children || null}
-                </div>
-                <div className={styles.rightWrapper}>
-                    <TaskBarItem 
-                        label={currentTime}
-                        icon={<ClockIcon />}
-                        onClick={clickTimeHandler}
-                    />
-                    <BatteryIcon />
-                </div>
-
+        <div className={`${styles.wrapper} ${className}`}>
+            <div className={styles.childrenWrapper}>
+                {children || null}
             </div>
-        </>
+            <div className={styles.rightWrapper}>
+                <TaskBarItem 
+                    label={currentTime}
+                    icon={<ClockIcon />}
+                    onClick={clickTimeHandler}
+                />
+                <BatteryIcon />
+            </div>
+
+        </div>
     )
 }
 

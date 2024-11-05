@@ -5,6 +5,7 @@ import MailIcon from "../icons/icons/MailIcon";
 import StartMenu from "./menu/StartMenu";
 import { useState } from "react";
 import styles from './TaskBar.module.css';
+import SmallFolderIcon from "../icons/icons/SmallFolderIcon";
 
 export default {
     title: 'RPCCL/taskbar',
@@ -30,6 +31,11 @@ export const Default = {
                         label="Start"
                         icon={<HomeIcon />}
                         onClick={clickStartHandler}
+                    />
+                    <TaskBarItem 
+                        icon={<SmallFolderIcon />}
+                        pinned={true}
+                        onClick={() => {alert('Pressed folder')}}
                     />
                 </Taskbar>
                 {/* Modal window */}

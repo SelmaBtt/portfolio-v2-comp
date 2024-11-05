@@ -9,12 +9,17 @@
 
 .wrapper > *:first-of-type{z-index: 2;}
 
+.childrenWrapper{
+    display: flex;
+}
+
 .rightWrapper{
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
+/* CSS for storybook */
 .modalBackground{
     left: 0;
     top: 0;
