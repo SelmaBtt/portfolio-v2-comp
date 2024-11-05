@@ -6,10 +6,10 @@ const YellowSquare = () => {
         <g filter="url(#filter0_ii_359_1091)">
             <rect width="22" height="22" fill="#EBD247"/>
         </g>
-        <path d="M4 5.5V7H7V5.5M4 5.5V4H7V5.5M4 5.5H7" stroke="white" stroke-opacity="0.7" stroke-width="2"/>
+        <path d="M4 5.5V7H7V5.5M4 5.5V4H7V5.5M4 5.5H7" stroke="white" strokeOpacity="0.7" strokeWidth="2"/>
         <defs>
-            <filter id="filter0_ii_359_1091" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <filter id="filter0_ii_359_1091" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
             <feOffset dx="3" dy="3"/>

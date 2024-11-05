@@ -15,6 +15,7 @@ import SmallFolderIcon from "./icons/SmallFolderIcon";
 
 export default {
     title: 'RPCCL/icons',
+    tags: ['autodocs'],
     parameters: {
         backgrounds: {
             default: 'Dark',
@@ -33,22 +34,81 @@ export const Desktop = {
     render: (args) => <CustomDesktopIcon {...args} />
 }
 
-export const Icons = {
+// export const OtherIcons = {
+//     render: () => (
+//         <div>
+//             <AvatarIcon />
+//             <FileIcon />
+//             <FolderIcon />
+//             <ClockIcon />
+//             <HomeIcon />
+//             <InfoIcon />
+//             <LeftArrowIcon />
+//             <RightArrowIcon />
+//             <MailIcon />
+//             <YellowSquare />
+//             <BatteryIcon />
+//             <SmallFolderIcon />
+//             <AnimatedDots />
+//         </div>
+//     )
+// }
+
+export const OtherIcons = {
     render: () => (
-        <div style={{backgroundColor: "#106B61"}}>
-            <AvatarIcon />
-            <FileIcon />
-            <FolderIcon />
-            <ClockIcon />
-            <HomeIcon />
-            <InfoIcon />
-            <LeftArrowIcon />
-            <RightArrowIcon />
-            <MailIcon />
-            <YellowSquare />
-            <BatteryIcon />
-            <SmallFolderIcon />
-            <AnimatedDots />
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px", color: "#ffffff", textAlign: "center" }}>
+            <div style={{ textAlign: "center" }}>
+                <AvatarIcon />
+                <p>AvatarIcon</p>
+            </div>
+            <div>
+                <FileIcon />
+                <p>FileIcon</p>
+            </div>
+            <div>
+                <FolderIcon />
+                <p>FolderIcon</p>
+            </div>
+            <div>
+                <ClockIcon />
+                <p>ClockIcon</p>
+            </div>
+            <div>
+                <HomeIcon />
+                <p>HomeIcon</p>
+            </div>
+            <div>
+                <InfoIcon />
+                <p>InfoIcon</p>
+            </div>
+            <div>
+                <LeftArrowIcon />
+                <p>LeftArrowIcon</p>
+            </div>
+            <div>
+                <RightArrowIcon />
+                <p>RightArrowIcon</p>
+            </div>
+            <div>
+                <MailIcon />
+                <p>MailIcon</p>
+            </div>
+            <div>
+                <YellowSquare />
+                <p>YellowSquare</p>
+            </div>
+            <div>
+                <BatteryIcon />
+                <p>BatteryIcon</p>
+            </div>
+            <div>
+                <SmallFolderIcon />
+                <p>SmallFolderIcon</p>
+            </div>
+            <div>
+                <AnimatedDots />
+                <p>AnimatedDots</p>
+            </div>
         </div>
-    )
-}
+    ),
+};

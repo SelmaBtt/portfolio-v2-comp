@@ -3,7 +3,7 @@ import styles from './CustomDesktopIcon.module.css';
 import PropTypes from "prop-types";
 import '../../global.css'
 
-const CustomDesktopIcon = ({ icon = "", label = "", className = "", ...props}) => {
+const CustomDesktopIcon = ({ icon = "", label = "", className = "", onClick = () => {}, ...props}) => {
     
     if (!icon) {
         console.error("icon is missing. No icon prop has been sent through");
@@ -14,6 +14,7 @@ const CustomDesktopIcon = ({ icon = "", label = "", className = "", ...props}) =
     return(
         <div 
             className={`${styles.wrapper} ${className || ''}`}
+            onClick={onClick}
             {...props}
         >
             {icon && <div className={styles.icon}>{icon}</div>}
@@ -28,7 +29,8 @@ CustomDesktopIcon.protoTypes = {
         PropTypes.element,
     ]),
     label: PropTypes.string,
-    className: PropTypes.string,    
+    className: PropTypes.string,
+    onClick: PropTypes.func,  
 }
 
 export default CustomDesktopIcon;
