@@ -11,6 +11,9 @@ const TaskBarItem = ({
     onClick = () => {}, 
     ...props 
 }) => {
+
+    if(!label && !icon) console.warn("Missing both label and icon. Please provide at least one")
+
     const mode = pinned ? styles.pinnedWrapper : styles.defaultWrapper;
 
     return(

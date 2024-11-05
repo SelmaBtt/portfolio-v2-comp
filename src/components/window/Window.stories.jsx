@@ -1,13 +1,15 @@
-import Window from './Window'
+import Window from './Window';
+import WindowHeader from './window-header/WindowHeader';
+import WindowTabs from './window-tabs/WindowTabs';
 
 export default {
     title: 'RPCCL/window',
-    component: Window
+    tags: ['autodocs'],
 }
 
 const tabsArr = ['Me', 'Skills', 'Languages']
 
-export const Default = {
+export const EntireWindow = {
     args: {
         title: 'Placeholder',
         tabs: tabsArr,
@@ -15,8 +17,30 @@ export const Default = {
     render: (args) => {
         return (
             <Window {...args}>
-                <p>Hello</p>
+                <p>Lorem ipsum</p>
             </Window>
+        );
+    } 
+}
+
+export const Bar = {
+    args: {
+        title: 'placeholder'
+    },
+    render: (args) => {
+        return (
+            <WindowHeader {...args} />
+        );
+    } 
+}
+
+export const Tabs = {
+    args: {
+        labels: tabsArr
+    },
+    render: (args) => {
+        return (
+            <WindowTabs {...args} />
         );
     } 
 }

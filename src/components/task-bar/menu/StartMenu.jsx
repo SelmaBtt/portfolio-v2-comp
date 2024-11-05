@@ -4,7 +4,17 @@ import styles from './StartMenu.module.css';
 import PropTypes from "prop-types";
 import RightArrowIcon from "../../icons/icons/RightArrowIcon";
 
-const StartMenu = ({ items, className, ...props }) => {
+const StartMenu = ({ items = [], className = "", ...props }) => {
+
+    if (!Array.isArray(items) || items.length === 0) {
+        console.error('Missing "items", "items" prop must be a non-empty array');
+    }
+    items.forEach((item, index) => {
+        if (typeof item !== 'string' && item.icon && !item.label) {
+            console.error(`item at index ${index} is missing a "label" property.`);
+        }
+    });
+
     return(
         <div className={`${styles.wrapper} ${className}`} {...props}>
             {items && items.length > 0 && items.map((item, idx) => (
@@ -38,13 +48,8 @@ StartMenu.propTypes = {
                 icon: PropTypes.element,
             })
         ])
-    ),
+    ).isRequired,
     className: PropTypes.string,
-}
-
-StartMenu.defaultProps = {
-    items: [],
-    className: '',
 }
 
 export default StartMenu;

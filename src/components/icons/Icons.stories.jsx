@@ -15,6 +15,14 @@ import SmallFolderIcon from "./icons/SmallFolderIcon";
 
 export default {
     title: 'RPCCL/icons',
+    parameters: {
+        backgrounds: {
+            default: 'Dark',
+            values: [
+                { name: 'Dark', value: '#333333' },
+            ],
+        },
+    },
 }
 
 export const Desktop = {

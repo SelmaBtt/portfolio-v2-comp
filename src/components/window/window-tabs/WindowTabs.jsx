@@ -1,10 +1,17 @@
 import React from "react";
 import styles from './WindowTabs.module.css';
+import PropTypes from "prop-types";
+import '../../global.css';
 
-const WindowTabs = ({ labels, onTabClick, className, ...props }) => {
+const WindowTabs = ({ 
+    labels = "", 
+    onClick = () => {}, 
+    className = "", 
+    ...props 
+}) => {
 
     if (!labels) console.warn(`Missing labels. The "labels" prop isn't being passed through and must be an array.`);
-    if (labels && !onTabClick) console.error('No click handler function provided. The "onTabClick" prop is required.');
+    if (labels && !onClick) console.warn('No click handler function provided. The "onTabClick" prop is required.');
 
     return (
         <div className={`${styles.wrapper} ${className || ''}`} {...props}>
@@ -12,7 +19,7 @@ const WindowTabs = ({ labels, onTabClick, className, ...props }) => {
                 <div 
                     key={idx} 
                     className={styles.itemWrapper}
-                    onClick={() => onTabClick(item, idx)}
+                    onClick={() => onClick(item, idx)}
                 >
                     {item}
                 </div>
@@ -20,5 +27,11 @@ const WindowTabs = ({ labels, onTabClick, className, ...props }) => {
         </div>
     );
 };
+
+WindowTabs.propTypes = {
+    label: PropTypes.string,
+    onClick: PropTypes.func,
+    className: PropTypes.string,
+}
 
 export default WindowTabs;

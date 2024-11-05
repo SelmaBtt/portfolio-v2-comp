@@ -3,7 +3,12 @@ import styles from './Button.module.css';
 import '../../global.css'
 import PropTypes from 'prop-types';
 
-const Button = ({ primary, label, className, onClick, ...props}) => {
+const Button = ({ 
+    primary = true, 
+    label = "", 
+    className = "", 
+    onClick = () => {}, 
+    ...props}) => {
 
     if (!label) console.warn('label is missing. No label prop has been passed through');
 
@@ -18,13 +23,6 @@ const Button = ({ primary, label, className, onClick, ...props}) => {
             {label}
         </button>
     )
-}
-
-Button.defaultProps = {
-    primary: true,
-    label: '',
-    className: '',
-    onClick: () => {},
 }
 
 Button.propTypes = {

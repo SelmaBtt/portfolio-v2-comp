@@ -1,8 +1,9 @@
 import React from "react";
 import styles from './CustomDesktopIcon.module.css';
 import PropTypes from "prop-types";
+import '../../global.css'
 
-const CustomDesktopIcon = ({ icon, label, className, ...props}) => {
+const CustomDesktopIcon = ({ icon = "", label = "", className = "", ...props}) => {
     
     if (!icon) {
         console.error("icon is missing. No icon prop has been sent through");
@@ -28,12 +29,6 @@ CustomDesktopIcon.protoTypes = {
     ]),
     label: PropTypes.string,
     className: PropTypes.string,    
-}
-
-CustomDesktopIcon.defaultProps = {
-    icon: '',
-    label: '',
-    className: '',
 }
 
 export default CustomDesktopIcon;

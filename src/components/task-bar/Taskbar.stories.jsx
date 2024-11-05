@@ -10,6 +10,7 @@ import SmallFolderIcon from "../icons/icons/SmallFolderIcon";
 export default {
     title: 'RPCCL/taskbar',
     component: Taskbar,
+    tags: ['autodocs'],
 }
 
 export const Default = {
