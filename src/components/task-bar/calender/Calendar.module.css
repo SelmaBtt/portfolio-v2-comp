@@ -1,0 +1,7 @@
+.datesWrapper{
+    display: flex;
+}
+
+.todayWrapper{
+    background-color: red;
+}
